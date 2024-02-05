@@ -2,6 +2,7 @@
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import GlobalTabs from '../GlobalTabs';
+import CustomDrawerContent from '../CustomDrawerContent';
 import MessageScreen from '../../screens/Message/index';
 
 const Stack = createNativeStackNavigator();
@@ -21,7 +22,8 @@ const DrawerScreen = () => {
   return (
     <Drawer.Navigator
       initialRouteName="StackScreen"
-      screenOptions={{headerShown: false}}>
+      screenOptions={{headerShown: false}}
+      drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="StackScreen" component={StackScreen} />
     </Drawer.Navigator>
   );

@@ -13,6 +13,7 @@ import {TouchableOpacity} from 'react-native-gesture-handler';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import {Tab, TabView} from '@rneui/themed';
 import {primaryColor} from '../../theme';
+import SmallButton from '../../components/SmallButton';
 
 // 导航头
 const MessageHeader = ({index = 0, setIndex, navigation}) => {
@@ -230,22 +231,6 @@ const Item = ({nickname, time, content, uri}: ItemProps) => (
     </View>
   </View>
 );
-
-// 自定义带有触摸样式的小按钮
-const SmallButton = ({title, onPress}) => {
-  return (
-    <TouchableOpacity
-      style={{
-        padding: 6,
-        backgroundColor: 'lightgray',
-        borderRadius: 6,
-        marginLeft: 4,
-      }}
-      onPress={onPress}>
-      <Text style={{fontSize: 12}}>{title}</Text>
-    </TouchableOpacity>
-  );
-};
 
 // 私信屏幕
 const LetterScreen = () => {
