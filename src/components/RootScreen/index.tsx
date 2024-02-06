@@ -5,7 +5,7 @@ import NavigationManager from '../../NavigationManager';
 
 const Drawer = createDrawerNavigator();
 
-const DrawerScreen = () => {
+const RootScreen = () => {
   return (
     <Drawer.Navigator
       initialRouteName="StackScreen"
@@ -16,4 +16,4 @@ const DrawerScreen = () => {
   );
 };
 
-export default DrawerScreen;
+export default RootScreen;

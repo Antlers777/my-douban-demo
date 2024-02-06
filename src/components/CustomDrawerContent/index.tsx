@@ -74,29 +74,29 @@ const OtherView = () => {
     <View style={styles.otherView}>
       <View style={styles.rowContainer}>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon1" size={24} color="black" />
+          <Ionicons name="gift" size={30} color="#333" />
           <Text style={styles.iconText}>图标1</Text>
         </View>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon2" size={24} color="black" />
+          <Ionicons name="speedometer" size={30} color="#333" />
           <Text style={styles.iconText}>图标2</Text>
         </View>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon3" size={24} color="black" />
+          <Ionicons name="bag-handle" size={30} color="#333" />
           <Text style={styles.iconText}>图标3</Text>
         </View>
       </View>
       <View style={styles.rowContainer}>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon4" size={24} color="black" />
+          <Ionicons name="logo-xbox" size={30} color="#333" />
           <Text style={styles.iconText}>图标4</Text>
         </View>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon5" size={24} color="black" />
+          <Ionicons name="desktop" size={30} color="#333" />
           <Text style={styles.iconText}>图标5</Text>
         </View>
         <View style={styles.iconTextContainer}>
-          <Ionicons name="icon6" size={24} color="black" />
+          <Ionicons name="game-controller" size={30} color="#333" />
           <Text style={styles.iconText}>图标6</Text>
         </View>
       </View>
@@ -197,7 +197,6 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     shadowRadius: 4,
     elevation: 5, // 用于 Android 上的阴影效果
-    flexDirection: 'row',
     justifyContent: 'space-between',
     padding: 10,
   },
@@ -210,6 +209,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  iconText: {
+    color: '#333',
   },
 });
 export default CustomDrawerContent;
