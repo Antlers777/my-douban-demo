@@ -35,6 +35,7 @@ const tabScreenOptions = ({route, navigation}) => ({
   headerRight: () => (
     <CustomHeaderRight navigation={navigation} route={route} />
   ),
+  headerShadowVisible: false, //是否隐藏标题上的标高阴影 (Android) 或底部边框 (iOS)。
   headerMode: 'screen',
   headerLeftContainerStyle: {
     height: 40,
