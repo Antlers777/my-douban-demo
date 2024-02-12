@@ -23,15 +23,30 @@ const Item = ({item}: {item: ItemData}) => {
       </View>
       <View style={styles.itemFooter}>
         <View style={styles.itemFooterFlex}>
-          <Ionicons />
+          <Ionicons
+            name="thumbs-up-outline"
+            size={26}
+            color="#666"
+            style={{marginRight: 5}}
+          />
           <Text>赞</Text>
         </View>
-        <View>
-          <Ionicons name="chatbox-outline" size={26} color="#666" />
+        <View style={styles.itemFooterFlex}>
+          <Ionicons
+            name="chatbox-outline"
+            size={26}
+            color="#666"
+            style={{marginRight: 5}}
+          />
           <Text>回复</Text>
         </View>
-        <View>
-          <Ionicons />
+        <View style={styles.itemFooterFlex}>
+          <Ionicons
+            name="share-outline"
+            size={26}
+            color="#666"
+            style={{marginRight: 5}}
+          />
           <Text>转发</Text>
         </View>
       </View>
@@ -45,7 +60,8 @@ const DATA = [
     avatar: '',
     nickname: 'antlers',
     time: '23秒前',
-    content: '给FlatList我们确保FlatList当状态改变时它会重新渲染。',
+    content:
+      '给FlatList我们确保FlatList当状态改变时它会重新渲染，给FlatList我们确保FlatList当状态改变时它会重新渲染。',
   },
   {
     id: '55998781-2839-F574-65ED-AA5FFA7EB513',
@@ -73,7 +89,8 @@ const DATA = [
     avatar: '',
     nickname: 'antlers',
     time: '23秒前',
-    content: '给FlatList我们确保FlatList当状态改变时它会重新渲染。',
+    content:
+      '给FlatList我们确保FlatList当状态改变时它会重新渲,给FlatList我们确保FlatList当状态改变时它会重新渲染',
   },
 ];
 
@@ -130,17 +147,30 @@ const styles = StyleSheet.create({
   },
   itemHeader: {
     flex: 1,
+    // width: '100%',
+    alignItems: 'center',
+    flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 10,
+    margin: 20,
     backgroundColor: 'white',
+  },
+  itemBody: {
+    marginLeft: 20,
+    marginRight: 20,
+    marginBottom: 20,
   },
   itemFooter: {
     flex: 1,
     width: '100%',
     flexDirection: 'row',
+    marginTop: 0,
+    marginBottom: 20,
   },
   itemFooterFlex: {
+    flex: 1,
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
